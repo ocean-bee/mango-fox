@@ -9,7 +9,7 @@ export default function Footer () {
     return(
         <div className="bg-gray-200">
         <div className="-mb-10">
-          <Image src={footerImg} width={2560} height={900} />
+          <Image src={footerImg} width={2560} height={900}  />
         </div>
         <div
           className=" h-72 flex justify-center items-center flex-col w-full space-y-2"
