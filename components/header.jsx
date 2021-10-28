@@ -21,7 +21,7 @@ export default function Header() {
             <div className="absolute -inset-0.5 filter blur-lg from-pink-600 to-purple-600 rounded-xl animate-tilt bg-gradient-to-br"></div>
             <div className="relative bg-black px-4 py-4 rounded-xl">
               <div>
-                <p className=" text-white uppercase font-semibold whitespace-nowrap" style={{ fontSize: "40px"}}>
+                <p className=" text-white uppercase font-semibold whitespace-nowrap" style={{ fontSize: "45px"}}>
                   Kalani Akita
                 </p>
               </div>
