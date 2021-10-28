@@ -1,16 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
-import { FaGithubAlt } from "@react-icons/all-files/fa/FaGithubAlt";
-import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter";
-import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
-import { TiThMenu } from "@react-icons/all-files/ti/TiThMenu";
-import bg from "../public/test.jpg";
-import footerImg from "../public/footer.svg";
-import headerImg from "../public/header2.svg";
+
 
 import React, { useState } from "react";
 import RoundedBar from "../components/RoundedBar";
 import Card from "../components/Card";
+import Footer from "../components/footer";
+import Header from "../components/header";
 
 export default function Home() {
   const [clicked, isActive] = useState(false);
@@ -34,52 +29,10 @@ export default function Home() {
         </nav>
         */}
 
-        {/* section 1 */}
-        <div>
-          <div
-            className="bg-black flex flex-col justify-center items-center -mt-10"
-            style={{
-              height: "100vh",
-            }}
-          >
-            <div className="relative">
-              <div className="absolute -inset-0.5 filter blur-lg from-pink-600 to-purple-600 rounded-xl animate-tilt bg-gradient-to-br"></div>
-              <div className="relative bg-black px-4 py-4 rounded-xl">
-                <div>
-                  <p className="text-5xl text-white uppercase font-semibold">
-                    Kalani Akita
-                  </p>
-                </div>
-                <div>
-                  <p
-                    className=" text-white uppercase font-thin"
-                    style={{ fontSize: "1.95rem" }}
-                  >
-                    Fullstack Developer
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="pt-16">
-              <div className="text-white text-3xl justify-between items-center flex flex-row space-x-12">
-                <div className="text-white text-3xl font-semibold">{"<"}</div>
-                <div className="text-white text-3xl items-center flex flex-row space-x-4 px-5">
-                  <FaGithubAlt />
-                  <FaTwitter />
-                  <FaLinkedinIn />
-                </div>
-                <div className="text-white text-3xl font-semibold">{"/>"}</div>
-              </div>
-            </div>
-          </div>
-          <div className="-mb-10 bg-gray-100">
-            <Image src={headerImg} width={2560} height={900} />
-          </div>
-        </div>
+        <Header />
 
         {/* wrapper */}
-        <div className="px-4 bg-gray-100 py-10 space-y-10">
+        <div className="px-4 bg-gray-200 py-10 space-y-10">
           {/* section 2 */}
           <div className="h-full py-5 flex justify-center items-center">
             <div className="w-full max-w-sm">
@@ -91,9 +44,9 @@ export default function Home() {
                 <p>
                   My name is Kalani and I'm just a girl that makes websites, mostly Jamstack ones. I graduated from UCSB in 2020 with a degree in Biology and used my scientist abilities to learn CS. </p>
                   
-                  <p>Often I incorporate the techniques and data analysis skills, as well as organic design patterns, I learned as a Biologist in my software engineering work. This results in creating applications that are easy to use by humans.
+                  <p>Often I incorporate the techniques and data analysis skills, as well as organic design patterns, I learned as a Biologist in my design & software engineering work. This results in creating applications that are easy to use by humans.
                 </p>
-                <p>If you'd like to learn more about me you can follow me on twitter for live updates.</p>
+                <p>If you'd like to learn more about me you can follow me on <a href="https://twitter.com/kalaniakita" className="text-pink-600 hover:text-pink-300 font-semibold">twitter</a> for live updates.</p>
               </div>
             </div>
           </div>
@@ -110,7 +63,7 @@ export default function Home() {
               <div className="space-y-5 text-lg">
                 <div>
                   <p className="text-2xl font-bold">
-                    Maitais At Sunset (2021-Present)
+                    <a href="https://maitaisatsunset.com" className="text-pink-600 hover:text-pink-300">Maitais At Sunset</a> (2021-Present)
                   </p>
                   <p>
                     I designed, developed, deployed and maintain the Maitais At
@@ -121,7 +74,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-2xl font-bold">
-                    Students Against Sexual Assault (2017-2020)
+                    <a href="https://sasa-ca.org" className="text-pink-600 hover:text-pink-300">Students Against Sexual Assault</a> (2017-2020)
                   </p>
                   <p>
                     I designed, developed, and deployed the Students Against
@@ -162,8 +115,7 @@ export default function Home() {
 
               <div className="space-y-5 text-lg">
                 <p>
-                  You can get in touch with me by sending an email to
-                  hi@kalani.dev or by reaching out to me on social media! I'll try to get back to you as soon as I can.
+                  You can get in touch with me by reaching out to me on <a href="https://twitter.com/kalaniakita" className="text-pink-600 hover:text-pink-300 font-semibold">twitter</a> or other social media! I'll try to get back to you as soon as I can.
                 </p>
               </div>
             </div>
@@ -171,33 +123,7 @@ export default function Home() {
         </div>
 
         {/* footer */}
-        <div className="bg-gray-100">
-          <div className="-mb-10">
-            <Image src={footerImg} width={2560} height={900} />
-          </div>
-          <div
-            className=" h-72 flex justify-center items-center flex-col w-full space-y-2"
-            style={{ backgroundColor: "#000000" }}
-          >
-            <p className="text-white text-2xl -ml-3 uppercase font-bold">
-              {"kalani.dev"}
-            </p>
-
-            <div>
-              <div className="text-white text-3xl justify-between items-center flex flex-row space-x-6">
-                <div className="text-white text-3xl font-semibold">{"<"}</div>
-                <div className="text-white text-3xl items-center flex flex-row space-x-4 px-5">
-                  <FaGithubAlt />
-                  <FaTwitter />
-                  <FaLinkedinIn />
-                </div>
-                <div className="text-white text-3xl font-semibold">{"/>"}</div>
-              </div>
-            </div>
-
-            <p className="text-sm font-thin text-gray-200">kalani.dev all rights reserved (2021)</p>
-          </div>
-        </div>
+        <Footer />
       </main>
     </div>
   );
