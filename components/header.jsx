@@ -21,14 +21,14 @@ export default function Header() {
             <div className="absolute -inset-0.5 filter blur-lg from-pink-600 to-purple-600 rounded-xl animate-tilt bg-gradient-to-br"></div>
             <div className="relative bg-black px-4 py-4 rounded-xl">
               <div>
-                <p className="text-5xl text-white uppercase font-semibold whitespace-nowrap">
+                <p className=" text-white uppercase font-semibold whitespace-nowrap" style={{ fontSize: "40px"}}>
                   Kalani Akita
                 </p>
               </div>
               <div>
                 <p
-                  className="text-3xl text-center text-pink-600 uppercase font-mono whitespace-nowrap"
-                >
+                  className=" text-center text-pink-600 uppercase font-mono whitespace-nowrap"
+                  style={{ fontSize: "25px"}}>
                   Fullstack Developer
                 </p>
               </div>
