@@ -57,7 +57,7 @@ export default function Home() {
           <div className=" h-full py-5 flex justify-center items-center">
             <div className="w-full max-w-sm">
               <div className="pb-5">
-                <RoundedBar title={"Recent Work"} />
+                <RoundedBar title={"Projects"} />
               </div>
 
               <div className="flex flex-row space-x-4"></div>
