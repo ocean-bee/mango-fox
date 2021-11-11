@@ -70,18 +70,7 @@ export default function Home() {
                     <a href="https://main.d1kun4c1lif2tq.amplifyapp.com/" className="text-pink-600 hover:text-pink-300">Jamstack Ecommerce App</a> (2021)
                   </p>
                   <div className="space-y-2">
-                  <p>
-                    Using the GatsbyJS react framework, for its load time optimaztion features, I developed a fullstack, Jamstack Ecommerce application. The frontend is built with react and styled with TailwindCSS. For the design I focused on creating an highly accessible layout that's both easy to use and to understand. Likewise I focused the design with smartphones in mind, aka for the computer in everyones pockets.
-                  </p>
-                    
-                  <p>The backend is headless, and uses both the Shopify api and Shopify storefront api to handle mission critical application functionality. This functionality being orders, payment, sensitive customer data, inventory, etc.
-                  </p>
-                  <p>
-                     For DevOps, a CI/CD pipeline with AWS was setup to ensure not only rapid deployment of updates to production, it also further enhanced load times in combo with high accesibility rates.
-                  </p>
-                  <p>
-                    The source code is publicly available on my <a href="https://github.com/ocean-bee/Gatsby_Ecommerce_Project" className="text-pink-600 hover:text-pink-300">github</a> and is licenced as is (MIT).
-                  </p>
+
                   </div>
                 </div>
 
@@ -89,23 +78,14 @@ export default function Home() {
                   <p className="text-2xl font-bold">
                     <a href="https://maitaisatsunset.com" className="text-pink-600 hover:text-pink-300">Maitais At Sunset</a> (2021-Present)
                   </p>
-                  <p>
-                    I designed, developed, deployed and maintain the Maitais At
-                    Sunset website. It's an application developed with the
-                    GatsbyJS React framework and styled using TailwindCSS. The
-                    content is managed headlessly using Strapi.
-                  </p>
+ 
                 </div>
 
                 <div>
                   <p className="text-2xl font-bold">
                     <a href="https://sasa-ca.org" className="text-pink-600 hover:text-pink-300">Students Against Sexual Assault</a> (2017-2020)
                   </p>
-                  <p>
-                    I designed, developed, and deployed the Students Against
-                    Sexual Assault website. It's built on the wordpress platform
-                    and was styled using the JupiterX themeing framework.
-                  </p>
+                 
                 </div>
 
                 
